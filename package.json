@@ -1,0 +1,12 @@
+{
+  "name": "jquerysided",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "live-server --quiet --port=8080 ./docs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

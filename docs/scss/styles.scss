@@ -1,0 +1,14 @@
+body { margin: 0%; }
+
+#draggable {
+    width: 10em;
+    height: 10em;
+    position: absolute;
+    background-color: rgb(72, 71, 79);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5%;
+}

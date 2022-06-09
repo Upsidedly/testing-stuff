@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="scss/styles.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  </head>
+  <body>
+    <script>
+      let clicks = 0
+      const thing = {
+        1: 'how about',
+        2: 'you draggy waggy',
+        3: 'dis wood ;)'
+      }
+    </script>
+
+    <script defer>
+      $(() => {
+        $('#draggable').draggable()
+        $('#draggable').on('click', () => {
+          clicks++
+          $('#draggable').find('p').text(thing[clicks] || 'draggy waggy')
+        })
+      })
+    </script>
+
+    <div id="draggable">
+      <p>draggy waggy</p>
+    </div>
+  </body>
+</html>
